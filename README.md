@@ -60,10 +60,19 @@ Tools were scored (1–5) and ranked using an MCDA Weighted Sum Model across six
 - Paperwork & Reports Automation (15%)
 - Real-Time Visibility (15%)
 
-**Top 3 Recommendations:**
-1. **KlearNow.AI** (4.7/5) - Customs automation & compliance
-2. **Flexport** (4.7/5) - End-to-end visibility & integration
-3. **TradeSun** (4.3/5) - Document processing & risk detection
+*## Top 5 Shortlist (MCDA Results)
+1. **KlearNow.AI** (4.7/5) – Customs automation & compliance
+2. **Flexport** (4.7/5) – End-to-end visibility & integration readiness
+3. **TradeSun** (4.3/5) – Document processing & risk detection
+4. **project44 Movement** (4.2/5) – Real-time shipment visibility & integrations
+5. **Freightos** (4.2/5) – Freight rate transparency & booking marketplace
+
+**Supporting visuals:** 
+ **Top-10 MCDA Ranking (bar chart):** see *Figure 1* below  
+ **Criteria Breakdown Heatmap (Top-10):** see *Figure 2* below
+
+<img width="1865" height="826" alt="image" src="https://github.com/user-attachments/assets/8fc6241a-ddbe-4fbb-bfb7-689bc2d329dd" />
+<img width="1851" height="1031" alt="image" src="https://github.com/user-attachments/assets/a961d8ce-30d7-4c42-8414-ff93cbfbd51e" />
 
 ### Phase 3: Implementation Roadmap
 Delivered 3-phase AI-First adoption strategy:
@@ -71,15 +80,35 @@ Delivered 3-phase AI-First adoption strategy:
 2. **Activation:** Pilot with one supplier cluster
 3. **Integration:** SOP documentation and governance
 
-## Business Impact
+  ## Client Recommendations (What I advised ATD to do next)
+
+### 1) Use the ranking to shortlist, then pilot
+- Use the MCDA ranking to narrow options quickly (see **Figure 1: Top-10 Ranking**).
+- Use the heatmap to compare strengths by criterion and select candidates that match priorities (see **Figure 2: Criteria Heatmap**).
+- Avoid committing to a vendor without a pilot, since real-world fit (integration effort, usability, corridor constraints) must be tested.
+
+### 2) Pilot approach (simple and realistic)
+- **Select 1–2 tools** from the Top 5 shortlist.
+- Run a pilot on **one lane / supplier cluster** and track basic outcomes (time saved, document accuracy, visibility improvements).
+- Use pilot learnings to finalize the recommended tool and rollout approach.
+
+### 3) Adoption roadmap (AI-first)
+Follow the phased roadmap shown in **Figure 3 (AI-first roadmap)**:
+- **Foundation:** workflow redesign, shortlist confirmation, pilot setup
+- **Activation:** pilot execution and performance review
+- **Integration:** SOPs, governance, and ongoing tool re-evaluation using the same scoring model
+
+  ## Business Impact
 - Automated scoring and ranking across 65 tools to reduce manual comparison effort
 - Reduced decision friction by converting tool selection into a transparent scoring model.
 - Produced a reusable evaluation matrix and visuals (rankings + heatmaps) to support repeatable tool selection.
 
 ## Technical Implementation
-- **Language:** Python (Pandas, Matplotlib, Seaborn)
-- **Method:** Multi-Criteria Decision Analysis (Weighted Sum Model)
-- **Data:** PRISMA-ScR compliant review of 27 sources (2023-2025)
+- Python: pandas for cleaning, scoring, and ranking
+- Visualization: matplotlib for charts/heatmaps
+- Method: MCDA (Weighted Sum Model)
+- Evidence base: PRISMA-ScR compliant review of 27 sources (2023–2025)
+
 
 ## Repository Contents
 - `mcda_analysis.py` - Python evaluation engine
