@@ -1,16 +1,8 @@
 # ai-logistics-tool-selection-mcda
 
 ## Executive Summary
-This project builds a decision-support model to shortlist AI logistics tools for Canada–Africa trade.
-I compiled and cleaned a dataset of 65 tools, then applied MCDA (Weighted Sum Model) to score and rank tools across six criteria.
-Outputs include a ranked table, per-criterion score breakdown, and visuals (Top-10 ranking + heatmap) to support transparent tool selection.
-Client context: Africa Trade Desk (ATD) | Timeline: 13 weeks | Methods: PRISMA-ScR + MCDA | Tools: Python (pandas, matplotlib).
-
-Business analysis case study: data-driven AI logistics tool selection for Canada–Africa trade. Used stakeholder requirements, MCDA scoring, and Python to rank 65 tools for SME cross-border logistics.
-
-# Business Analysis: AI Logistics Tool Selection
-**Client: Africa Trade Desk (ATD) | Timeline: 13 Weeks  
-Methods: PRISMA-ScR + MCDA (Weighted Sum Model) | Stack: Python (pandas, matplotlib), Excel (Power Query/PivotTables), ChatGPT, Perplexity, Kimi AI
+Business analysis and data analysis case study focused on AI logistics tool selection for Canada–Africa trade. Built a decision-support model by cleaning a 65-tool dataset and applying MCDA (Weighted Sum Model) to score and rank tools across six criteria. Deliverables include a ranked table, per-criterion score breakdown, and visuals (Top-10 ranking + heatmap).
+Client: Africa Trade Desk (ATD) | Timeline: 13 weeks | Methods: PRISMA-ScR + MCDA | Tools: Python (pandas, matplotlib), ChatGPT, Perplexity, Kimi AI, Microsoft Excel
 
 ## Data Analysis & Python Implementation
 ### Data pipeline (what I did)
