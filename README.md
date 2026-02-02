@@ -1,18 +1,45 @@
 # ai-logistics-tool-selection-mcda
+
+## Executive Summary
+This project builds a decision-support model to shortlist AI logistics tools for Canada–Africa trade.
+I compiled and cleaned a dataset of 65 tools, then applied MCDA (Weighted Sum Model) to score and rank tools across six criteria.
+Outputs include a ranked table, per-criterion score breakdown, and visuals (Top-10 ranking + heatmap) to support transparent tool selection.
+Client context: Africa Trade Desk (ATD) | Timeline: 13 weeks | Methods: PRISMA-ScR + MCDA | Tools: Python (pandas, matplotlib).
+
 Business analysis case study: data-driven AI logistics tool selection for Canada–Africa trade. Used stakeholder requirements, MCDA scoring, and Python to rank 65 tools for SME cross-border logistics.
+
 # Business Analysis: AI Logistics Tool Selection
-**Client:** Africa Trade Desk (ATD) | **Timeline:** 13 Weeks | **Methodology:** PRISMA-ScR + MCDA
+**Client: Africa Trade Desk (ATD) | Timeline: 13 Weeks  
+Methods: PRISMA-ScR + MCDA (Weighted Sum Model) | Stack: Python (pandas, matplotlib), Excel (Power Query/PivotTables), ChatGPT, Perplexity, Kimi AI
+
+## Data Analysis & Python Implementation
+### Data pipeline (what I did)
+- Built a structured dataset of 65 AI logistics tools and standardized fields for reliable comparison (tool name, category, evidence links, and scoring inputs).
+- Cleaned and normalized the dataset in Python (pandas): removed duplicates, fixed inconsistent labels, and handled missing values so scoring was consistent across tools.
+- Engineered scoring features by mapping tool capabilities and evidence into 1–5 scores across six criteria:
+  Ease of Use, Cost Efficiency, Integration Readiness, Scalability, Paperwork & Reports Automation, Real-Time Visibility.
+
+### Scoring + ranking model (how the analysis works)
+- Implemented an MCDA Weighted Sum Model:
+  - normalized scores where needed,
+  - applied criterion weights,
+  - calculated total scores,
+  - generated a full ranking and Top-10 shortlist.
+- Produced decision-ready outputs:
+  - ranked results table (overall + per-criterion breakdown),
+  - Top-10 comparison heatmap for quick pattern spotting,
+  - visuals to support the final recommendations.
 
 ## The Business Problem
-ATD facilitates trade between Canadian wholesalers and African suppliers but lacked the internal capability to evaluate AI logistics tools. They faced:
-- Decision paralysis with 65+ tool options
-- No framework to assess suitability for small teams (1-5 users)
-- Risk of costly technology misalignment in low-infrastructure African markets
+ATD supports Canada–Africa trade but lacked a repeatable way to evaluate AI logistics tools:
+- Too many options (65+ tools) with inconsistent information
+- No structured scoring method to match tool capabilities to needs
+- High risk of selecting tools that don’t fit small teams or trade corridor constraints
 
 ## My Role as Business Analyst
 
 ### Phase 1: Stakeholder Engagement & Requirements
-**Meetings conducted:**
+**Stakeholder interviews with ATD trade enablement and operations leads to confirm priorities and constraints.
 - **Susan Namulindwa** (Trade Enablement Lead): Defined "AI-First" mandate, small-team constraint
 - **Victoria Schorr** (Operations): Identified customs automation as priority pain point
 
@@ -32,12 +59,14 @@ ATD facilitates trade between Canadian wholesalers and African suppliers but lac
 Built a Python-based decision engine to objectively score 65 tools against weighted business criteria:
 
 **Evaluation Criteria:**
-- Ease of Use (20%) - *Adoption risk mitigation*
-- Integration Readiness (20%) - *Technical debt prevention*
-- Cost Efficiency (15%) - *Budget alignment*
-- Scalability (15%) - *Future-proofing*
-- Paperwork Automation (15%) - *Process efficiency*
-- Real-Time Visibility (15%) - *Operational control*
+## MCDA Scoring Model
+Tools were scored (1–5) and ranked using an MCDA Weighted Sum Model across six weighted criteria:
+- Ease of Use (20%)
+- Integration Readiness (20%)
+- Cost Efficiency (15%)
+- Scalability (15%)
+- Paperwork & Reports Automation (15%)
+- Real-Time Visibility (15%)
 
 **Top 3 Recommendations:**
 1. **KlearNow.AI** (4.7/5) - Customs automation & compliance
@@ -52,8 +81,8 @@ Delivered 3-phase AI-First adoption strategy:
 
 ## Business Impact
 - **Automated scoring and ranking across 65 tools to reduce manual comparison effort
-- **Risk mitigation:** Data-driven selection prevents costly misalignment
-- **Reusable asset:** Framework applicable to future technology decisions
+- **Reduced decision friction by converting tool selection into a transparent scoring model.
+- **Produced a reusable evaluation matrix and visuals (rankings + heatmaps) to support repeatable tool selection.
 
 ## Technical Implementation
 - **Language:** Python (Pandas, Matplotlib, Seaborn)
